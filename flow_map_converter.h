@@ -8,9 +8,9 @@ class vtkStructuredPoints;
 class FlowMapConverter {
  public:
   void set_origin(double x, double y, double z) {
-    dimensions_[0] = x;
-    dimensions_[1] = y;
-    dimensions_[2] = z;
+    origin_[0] = x;
+    origin_[1] = y;
+    origin_[2] = z;
   }
 
   void set_spacing(double dx, double dy, double dz) {
