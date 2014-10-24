@@ -23,6 +23,7 @@ void flow_map_converter_test() {
   converter.set_dimensions(kDimensions[0], kDimensions[1], kDimensions[2]);
 
   vtkStructuredPoints *flow_map = converter.read_flow_map(kDataFile);
+
   vtkSmartPointer<vtkStructuredPointsWriter> writer =
       vtkSmartPointer<vtkStructuredPointsWriter>::New();
   writer->SetFileName(kOutputFile);
